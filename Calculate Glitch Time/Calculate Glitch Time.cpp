@@ -236,7 +236,10 @@ int main()
 {
     std::cout << "Pet/Aura Rebirths Glitching Speed" << std::endl;
     // change constant to change resultant set calculation
-    CalculateSets(8 * 24, 5, true);
+    double constant = 0;
+    std::cout << "Input constant between 1-6: ";
+    std::cin >> constant;
+    CalculateSets(8 * 24, constant, true);
     return 0;
     /*
     double Max = 6;
