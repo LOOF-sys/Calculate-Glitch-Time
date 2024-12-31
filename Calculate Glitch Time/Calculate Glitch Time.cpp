@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <math.h>
 
+// outdated constant probably 1.6 qa area
 #define MAXIMUM_POSSIBLE_WEEKLYGAIN 96261846305944.390625
 #define HAS_PREMIUM 2;
 #define NO_PREMIUM 1;
@@ -12,7 +13,7 @@ double PUNCH_TIME = 1.112074927953891;
 double REP_TIME = 0.2;
 double MUSCLE_KING_TIME = 6.1;
 uint8_t PREMIUM = HAS_PREMIUM;
-uint8_t BOOSTER = 1;
+uint8_t BOOSTER = 1.5;
 uint8_t PETS = 8;
 uint64_t AURA_ADDSTATS = 70;
 uint64_t PET_ADDSTATS = 95;
@@ -234,6 +235,7 @@ double CalculateSets(double WeekHours, double Divisor, bool Print = true)
 int main()
 {
     std::cout << "Pet/Aura Rebirths Glitching Speed" << std::endl;
+    // change constant to change resultant set calculation
     CalculateSets(8 * 24, 5, true);
     return 0;
     /*
